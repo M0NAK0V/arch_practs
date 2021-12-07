@@ -40,8 +40,6 @@ class PingPongThread implements Runnable{
 public class PingPong {
     public static void main(String[] args) throws  InterruptedException {
         Object LOCK_OBJECT = new Object();
-        //Thread ping = new Thread(new PingPongThread(LOCK_OBJECT, "Ping"));
-        //Thread pong = new Thread(new PingPongThread(LOCK_OBJECT, "Pong"));
         PingPongThread ping = new PingPongThread(LOCK_OBJECT, "Ping");
         PingPongThread pong = new PingPongThread(LOCK_OBJECT, "Pong");
 
